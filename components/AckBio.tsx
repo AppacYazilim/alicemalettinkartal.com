@@ -49,7 +49,8 @@ function InlineThumb({
             inset: 0,
             width: "100%",
             height: "100%",
-            objectFit: "cover",
+            objectFit: "contain",
+            padding: 6,
           }}
         />
       )}
@@ -86,46 +87,52 @@ export function AckBio() {
           Yönettiğim{" "}
           <strong style={{ color: "#1a1a1a", fontWeight: "bold" }}>şirketler</strong>
           <InlineThumb
-            gradient="linear-gradient(135deg,#1C3962,#2D5A8E)"
-            alt="Şirketler"
+            src="/icons/kbs.svg"
+            gradient="#F5F2EC"
+            alt="KBS Kartal Bombe Sanayi"
           />{" "}
           ve geliştirdiğim{" "}
           <strong style={{ color: "#1a1a1a", fontWeight: "bold" }}>
             endüstriyel çözümler
           </strong>
           <InlineThumb
-            gradient="linear-gradient(135deg,#4A6741,#6B9460)"
-            alt="Endüstriyel Çözümler"
+            src="/icons/harfkesim.svg"
+            gradient="linear-gradient(135deg,#C0181A,#E8222A)"
+            alt="Harf Kesim Çıkartmalar"
           />{" "}
           hakkında okuyun. Sürdürdüğüm{" "}
           <strong style={{ color: "#1a1a1a", fontWeight: "bold" }}>
             teknoloji yatırımları
           </strong>
           <InlineThumb
-            gradient="linear-gradient(135deg,#6B4423,#A0672E)"
-            alt="Teknoloji Yatırımları"
+            src="/icons/icon-trending.svg"
+            gradient="linear-gradient(135deg,#0F1E35,#1A2F4A)"
+            alt="Teknoloji yatırımları"
           />{" "}
           ve yayımladığım{" "}
           <strong style={{ color: "#1a1a1a", fontWeight: "bold" }}>
             sektörel analizleri
           </strong>
           <InlineThumb
-            gradient="linear-gradient(135deg,#5C2D78,#8E4AB5)"
-            alt="Sektörel Analizler"
+            src="/icons/icon-barchart.svg"
+            gradient="linear-gradient(135deg,#3A1A5C,#5C2D8A)"
+            alt="Sektörel analizleri"
           />{" "}
           keşfedin. Ama iş her şey değil. Desteklediğim{" "}
           <strong style={{ color: "#1a1a1a", fontWeight: "bold" }}>
             genç girişimciler
           </strong>
           <InlineThumb
-            gradient="linear-gradient(135deg,#8B3A1A,#C45A28)"
-            alt="Genç Girişimciler"
+            src="/icons/icon-lightbulb.svg"
+            gradient="linear-gradient(135deg,#0D5C3A,#187A50)"
+            alt="Genç girişimciler"
           />{" "}
           ve beni şekillendiren{" "}
           <strong style={{ color: "#1a1a1a", fontWeight: "bold" }}>
             değerler
           </strong>
           <InlineThumb
+            src="/icons/icon-compass.svg"
             gradient="linear-gradient(135deg,#1C3962,#1A6B5C)"
             alt="Değerler"
           />{" "}
