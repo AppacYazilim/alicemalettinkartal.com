@@ -133,10 +133,9 @@ export default function PlatformsPage() {
         }
 
         .plat-btn-icon {
-          width: 20px;
-          height: 20px;
+          width: 22px;
+          height: 22px;
           flex-shrink: 0;
-          color: #B8956A;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -217,9 +216,12 @@ export default function PlatformsPage() {
 
             <a className="plat-btn" href="mailto:cemalettin.kartal@kartalbombe.com.tr">
               <span className="plat-btn-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="4" width="20" height="16" rx="2"/>
-                  <polyline points="2,7 12,14 22,7"/>
+                {/* Gmail logo */}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" fill="#EA4335"/>
+                  <path d="M0 5.457v13.909c0 .904.732 1.636 1.636 1.636h3.819v-9.27L0 7.64V5.457z" fill="#C5221F"/>
+                  <path d="M24 5.457v2.184l-5.455 4.09v9.27h3.819A1.636 1.636 0 0 0 24 19.365V5.457z" fill="#C5221F"/>
+                  <path d="M0 5.457l12 9.09 12-9.09C24 3.434 21.69 2.28 20.073 3.493L18.545 4.64 12 9.548 5.455 4.64 3.927 3.493C2.31 2.28 0 3.434 0 5.457z" fill="#EA4335"/>
                 </svg>
               </span>
               <span className="plat-btn-text">
@@ -231,10 +233,20 @@ export default function PlatformsPage() {
 
             <a className="plat-btn" href="https://www.instagram.com/ack_kbs/" target="_blank" rel="noopener noreferrer">
               <span className="plat-btn-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5.5"/>
-                  <circle cx="12" cy="12" r="4.5"/>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" strokeWidth="2.2" strokeLinecap="round"/>
+                {/* Instagram official gradient logo */}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="ig-rg" cx="30%" cy="107%" r="150%">
+                      <stop offset="0%" stopColor="#fdf497"/>
+                      <stop offset="5%" stopColor="#fdf497"/>
+                      <stop offset="45%" stopColor="#fd5949"/>
+                      <stop offset="60%" stopColor="#d6249f"/>
+                      <stop offset="90%" stopColor="#285AEB"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="24" height="24" rx="6" fill="url(#ig-rg)"/>
+                  <circle cx="12" cy="12" r="4.2" fill="none" stroke="white" strokeWidth="1.5"/>
+                  <circle cx="17.2" cy="6.8" r="1" fill="white"/>
                 </svg>
               </span>
               <span className="plat-btn-text">
@@ -246,12 +258,10 @@ export default function PlatformsPage() {
 
             <a className="plat-btn" href="https://www.linkedin.com/in/alicemalettinkartal/" target="_blank" rel="noopener noreferrer">
               <span className="plat-btn-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="3"/>
-                  <line x1="8" y1="11" x2="8" y2="17"/>
-                  <line x1="12" y1="11" x2="12" y2="17"/>
-                  <path d="M12 13.5a3.5 3.5 0 0 1 7 0V17"/>
-                  <circle cx="8" cy="7.5" r="0.75" fill="currentColor" stroke="none"/>
+                {/* LinkedIn official logo */}
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+                  <path fill="white" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </span>
               <span className="plat-btn-text">
@@ -263,7 +273,8 @@ export default function PlatformsPage() {
 
             <a className="plat-btn" href="https://alicemalettinkartal.com/" target="_blank" rel="noopener noreferrer">
               <span className="plat-btn-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                {/* Safari/globe icon */}
+                <svg viewBox="0 0 24 24" fill="none" stroke="#B8956A" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="10"/>
                   <line x1="2" y1="12" x2="22" y2="12"/>
                   <path d="M12 2a15.5 15.5 0 0 1 4 10 15.5 15.5 0 0 1-4 10 15.5 15.5 0 0 1-4-10 15.5 15.5 0 0 1 4-10z"/>
