@@ -5,7 +5,7 @@ import { usePageContext } from "vike-react/usePageContext";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const pageContext = usePageContext();
-  const isStandalone = pageContext.urlPathname === "/platforms";
+  const isStandalone = pageContext.urlPathname.startsWith("/platforms");
 
   if (isStandalone) return <>{children}</>;
 
